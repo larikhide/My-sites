@@ -76,7 +76,8 @@ header {
   align-self: center;
 }
 
-.pluses-list {
+.pluses-list,
+.scrin-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -85,7 +86,8 @@ header {
   list-style-type: none;
 }
 
-.pluses-strings {
+.pluses-strings,
+.scrin-product {
   max-width: 568px;
   display: flex;
   margin-top: 26px;
@@ -100,8 +102,44 @@ header {
 
 .scrinshots {
   display: flex;
+  padding: 50px;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
-.section-headers {
-  justify-self: center;
+.scrin-list {
+  list-style-type: none;
+}
+
+.scrin-figure {
+  display: flex;
+}
+
+.scrin-img {
+  padding-right: 15px;
+}
+
+.reviews {
+  background-color: #f5f5f5;
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-text {
+  background-color: #ebebeb;
+  margin-right: 50px;
+  font-style: italic;
+}
+
+.reviews .scrin-img {
+  align-self: flex-start;
+}
+
+.user-name {
+  font-style: normal;
+  color: #989898;
+  padding: 10px 5px;
 }
