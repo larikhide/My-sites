@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.header {
+header {
   display: flex;
   background-color: #445162;
   justify-content: space-around;
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
 }
 
-.header-info > ul {
+.header-info {
   list-style-type: none;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
@@ -96,4 +96,12 @@
 .fas {
   font-size: 32px;
   margin-right: 9px;
+}
+
+.scrinshots {
+  display: flex;
+}
+
+.section-headers {
+  justify-self: center;
 }
