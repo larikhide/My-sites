@@ -13,8 +13,8 @@ footer .section-headers {
 
 footer .contact-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 footer .contact-box .feedback-form {
@@ -71,27 +71,40 @@ footer .contact-box .feedback-form {
   margin: 0 auto;
 }
 
-.bflex, footer .contact-box, .contacts .social-list, header, .about, .pluses-list, .screen-list,
-.reviews-list, .buy-it-now {
+.bflex,
+footer .contact-box,
+.contacts .social-list,
+header,
+.about,
+.pluses-list,
+.screen-list,
+.reviews-list,
+.buy-it-now {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.fonts, .feedback-form button, header, .pluses, .pluses-strings, .reviews, .buy-it-now {
+.fonts,
+.feedback-form button,
+header,
+.pluses,
+.pluses-strings,
+.reviews,
+.buy-it-now {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   background-color: #445162;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 30px;
   list-style-type: none;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
@@ -114,8 +127,8 @@ header .main-name {
 .about {
   padding: 30px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .about-text {
@@ -144,8 +157,8 @@ header .main-name {
   background-color: #f5f5f5;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .section-headers {
@@ -154,14 +167,14 @@ header .main-name {
   font-weight: 400;
   color: #445161;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .pluses-list {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   line-height: 24px;
   color: #333333;
   list-style-type: none;
@@ -173,8 +186,8 @@ header .main-name {
   display: flex;
   margin-top: 26px;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   max-width: 540px;
 }
 
@@ -193,8 +206,8 @@ header .main-name {
   list-style-type: none;
   padding: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .screen-figure,
@@ -224,10 +237,10 @@ h3 {
   padding: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .reviews .reviews-product {
@@ -251,18 +264,18 @@ h3 {
 
 .buy-it-now {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-width: 426.66667px;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .buy-it-now .buy-it-now-plan {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   margin: 20px;
   background: #445162;
