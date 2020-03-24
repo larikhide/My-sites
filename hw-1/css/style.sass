@@ -1,5 +1,6 @@
 @import vars
 @import mixins
+@import footer
 
 .container
   max-width: $width-site
@@ -114,7 +115,7 @@ header
     max-width(2)-2*$paddings
 
 li.screen-string
-  +max-width(2)
+  +max-width(2.1)
 
 img.screen-img,
 .reviews-img
@@ -151,16 +152,36 @@ h3
 
 .buy-it-now
   @extend .bflex
+  @extend .fonts
   justify-content: center
   min-width: $width-site/3
   align-items: flex-end
   .buy-it-now-plan
     justify-content: center
     text-align: center
-    margin: 45px
+    margin: 20px
     background: #445162
     color: #ffffff
     border-radius: 10px
+    .plan-name
+      margin: 5%
     .plan-strings
       text-align: start
       margin-right: 15px
+      margin-bottom: 5%
+    .plan-price
+      background: #ffffff
+      color: #445162
+      font-size: 35px
+      padding: 5%
+      border: 2px solid #445162
+    form
+      margin: 20px 1.5% 20px
+      button
+        border: none
+        width: 80%
+        text-transform: uppercase
+        height: 40px
+        border-radius: 10px
+        background-color: #ffffff
+        font-weight: bold
