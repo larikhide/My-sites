@@ -1,56 +1,53 @@
-$width-site: 1280px
-$min-width-site: 640px
-$paddings: 50px
-
-
+@import vars
+@import mixins
 
 .container
   max-width: $width-site
   min-width: $min-width-site
   margin: 0 auto
 
+.bflex
+  display: flex
+  flex-wrap: wrap
+
+.fonts
+  font-family: Arial, Helvetica, sans-serif
 
 header
-  display: flex
   background-color: #445162
   justify-content: space-between
   align-items: center
   padding: 30px
-  flex-wrap: wrap
-
-
-.header-info
+  @extend .bflex
+  .header-info
   list-style-type: none
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
   color: #ffffff
-  font-family: Arial, Helvetica, sans-serif
+  @extend .fonts
   font-size: 20px
   font-weight: 400
   line-height: 36px
-
-
-.main-name
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
-  color: #ffffff
-  font-family: Arial, Helvetica, sans-serif
-  font-size: 60px
-  font-weight: 400
-  padding: 30px
-  padding-left: 0
+  .main-name
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+    color: #ffffff
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 60px
+    font-weight: 400
+    padding: 30px
+    padding-left: 0
 
 
 .about
-  display: flex
   padding: 30px
   justify-content: space-between
-  flex-wrap: wrap
+  @extend .bflex
 
 
 .about-text
   color: #333333
   font-family: Arial, Helvetica, sans-serif
   font-size: 16px
-  max-width: $width-site/2.5
+  +max-width(2.5)
 
 
 .about-details
@@ -69,7 +66,7 @@ header
   padding: 50px
   background-color: #f5f5f5
   flex-direction: column
-  font-family: Arial, Helvetica, sans-serif
+  @extend .fonts
 
 
 .section-headers
@@ -81,8 +78,7 @@ header
 
 
 .pluses-list
-  display: flex
-  flex-wrap: wrap
+  @extend .bflex
   justify-content: space-between
   line-height: 24px
   color: #333333
@@ -92,10 +88,9 @@ header
 .pluses-strings
   display: flex
   margin-top: 26px
-  font-family: "ArialMT", sans-serif
   align-items: flex-start
-  flex-wrap:wrap
-  max-width: $width-site/2-2*$paddings
+  max-width: $width-site/2 - 2*$paddings
+  @extend .fonts
 
 
 .fas
@@ -108,19 +103,21 @@ header
 
 .screen-list,
 .reviews-list
-    display: flex
+    @extend .bflex
     list-style-type: none
-    flex-wrap: wrap
     padding: 0
     justify-content: space-between
 
 .screen-figure,
 .reviews-figure
     display: flex
-    max-width: $width-site/2-2*$paddings
+    max-width(2)-2*$paddings
+
+li.screen-string
+  +max-width(2)
 
 img.screen-img,
-reviews-img
+.reviews-img
     padding-right: 15px
     height: 150px
 
@@ -132,10 +129,14 @@ h3
   background-color: #f5f5f5
   padding: 50px
   flex-direction: column
-  font-family: Arial, Helvetica, sans-serif
+  @extend .fonts
+  align-self: flex-start
 
   .reviews-product
     max-width: $width-site/2-2*$paddings
+
+.reviews-img
+    max-height: 75px
 
 
 .review-text
@@ -143,11 +144,23 @@ h3
   font-style: italic
 
 
-.reviews
-  align-self: flex-start
-
-
 .user-name
   font-style: normal
   color: #989898
   padding: 10px 5px
+
+.buy-it-now
+  @extend .bflex
+  justify-content: center
+  min-width: $width-site/3
+  align-items: flex-end
+  .buy-it-now-plan
+    justify-content: center
+    text-align: center
+    margin: 45px
+    background: #445162
+    color: #ffffff
+    border-radius: 10px
+    .plan-strings
+      text-align: start
+      margin-right: 15px

@@ -4,10 +4,29 @@
   margin: 0 auto;
 }
 
-header {
+.bflex,
+header,
+.about,
+.pluses-list,
+.screen-list,
+.reviews-list,
+.buy-it-now {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.fonts,
+header,
+.pluses,
+.pluses-strings,
+.reviews {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
   background-color: #445162;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -16,21 +35,15 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding: 30px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.header-info {
   list-style-type: none;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
 }
 
-.main-name {
+header .main-name {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
@@ -41,15 +54,10 @@ header {
 }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 30px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .about-text {
@@ -80,7 +88,6 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .section-headers {
@@ -94,11 +101,6 @@ header {
 }
 
 .pluses-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -112,7 +114,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-top: 26px;
-  font-family: "ArialMT", sans-serif;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -131,12 +132,7 @@ header {
 
 .screen-list,
 .reviews-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -148,11 +144,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 540px;
+}
+
+li.screen-string {
+  max-width: 640px;
 }
 
 img.screen-img,
-reviews-img {
+.reviews-img {
   padding-right: 15px;
   height: 150px;
 }
@@ -169,11 +168,16 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .reviews .reviews-product {
   max-width: 540px;
+}
+
+.reviews-img {
+  max-height: 75px;
 }
 
 .review-text {
@@ -181,14 +185,35 @@ h3 {
   font-style: italic;
 }
 
-.reviews {
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
 .user-name {
   font-style: normal;
   color: #989898;
   padding: 10px 5px;
+}
+
+.buy-it-now {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 426.66667px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.buy-it-now .buy-it-now-plan {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 45px;
+  background: #445162;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.buy-it-now .buy-it-now-plan .plan-strings {
+  text-align: start;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */
