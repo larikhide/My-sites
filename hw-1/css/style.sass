@@ -1,0 +1,153 @@
+$width-site: 1280px
+$min-width-site: 640px
+$paddings: 50px
+
+
+
+.container
+  max-width: $width-site
+  min-width: $min-width-site
+  margin: 0 auto
+
+
+header
+  display: flex
+  background-color: #445162
+  justify-content: space-between
+  align-items: center
+  padding: 30px
+  flex-wrap: wrap
+
+
+.header-info
+  list-style-type: none
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+  color: #ffffff
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 20px
+  font-weight: 400
+  line-height: 36px
+
+
+.main-name
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+  color: #ffffff
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 60px
+  font-weight: 400
+  padding: 30px
+  padding-left: 0
+
+
+.about
+  display: flex
+  padding: 30px
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.about-text
+  color: #333333
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 16px
+  max-width: $width-site/2.5
+
+
+.about-details
+  padding-bottom: 15px
+
+
+.about-name
+  font-size: 30px
+  color: #445161
+  font-size: 30px
+  padding-bottom: 50px
+
+
+.pluses
+  display: flex
+  padding: 50px
+  background-color: #f5f5f5
+  flex-direction: column
+  font-family: Arial, Helvetica, sans-serif
+
+
+.section-headers
+  font-size: 30px
+  line-height: 23px
+  font-weight: 400
+  color: #445161
+  align-self: center
+
+
+.pluses-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  line-height: 24px
+  color: #333333
+  list-style-type: none
+
+
+.pluses-strings
+  display: flex
+  margin-top: 26px
+  font-family: "ArialMT", sans-serif
+  align-items: flex-start
+  flex-wrap:wrap
+  max-width: $width-site/2-2*$paddings
+
+
+.fas
+  font-size: 32px
+  margin-right: 9px
+
+.screenshots h2,
+.reviews h2
+    text-align: center
+
+.screen-list,
+.reviews-list
+    display: flex
+    list-style-type: none
+    flex-wrap: wrap
+    padding: 0
+    justify-content: space-between
+
+.screen-figure,
+.reviews-figure
+    display: flex
+    max-width: $width-site/2-2*$paddings
+
+img.screen-img,
+reviews-img
+    padding-right: 15px
+    height: 150px
+
+h3
+    margin-top: 0
+    margin-bottom: 5px
+
+.reviews
+  background-color: #f5f5f5
+  padding: 50px
+  flex-direction: column
+  font-family: Arial, Helvetica, sans-serif
+
+  .reviews-product
+    max-width: $width-site/2-2*$paddings
+
+
+.review-text
+  background-color: #ebebeb
+  font-style: italic
+
+
+.reviews
+  align-self: flex-start
+
+
+.user-name
+  font-style: normal
+  color: #989898
+  padding: 10px 5px
