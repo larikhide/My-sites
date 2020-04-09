@@ -1,3 +1,74 @@
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 0;
+        grid-template-rows: 1fr 0;
+        grid-template-areas: "info info who-i-am" "footer footer footer";
+  }
+  .container footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    padding: 0;
+  }
+  .who-i-am {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: who-i-am;
+  }
+  .info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: info;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 0;
+        grid-template-rows: 1fr 0;
+        grid-template-areas: "info info who-i-am" "footer footer footer";
+  }
+  .container footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    padding: 0;
+  }
+  .who-i-am {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: who-i-am;
+  }
+  .info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: info;
+  }
+  .container {
+    max-width: 1366px;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -11,7 +82,9 @@ body {
 }
 
 .container {
+  min-width: 240px;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 a {
@@ -81,6 +154,7 @@ h5 {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .who-i-am .profile .position {
@@ -139,9 +213,18 @@ h5 {
 }
 
 footer {
-  min-height: 10vh;
-  background: #707A8A;
+  min-height: 5vh;
+  background: #434A54;
   padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer ul {
@@ -151,6 +234,7 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.25rem;
 }
 
 footer li {
@@ -158,6 +242,6 @@ footer li {
 }
 
 footer p {
-  text-align: right;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
